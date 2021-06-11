@@ -3,14 +3,14 @@
 }
 
 .slide {
-  opacity: 0;
+  opacity: 0.8;
   transition-duration: 1s;
 }
 
 .slide.active {
   opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.01);
+  transition-duration: 0.7s;
+  /* transform: scale(1.01); */
 }
 
 .banner {
@@ -77,4 +77,21 @@
 
 .right-arrow {
   right: 1.5rem;
+}
+
+.dot {
+  padding: 5px;
+  margin: 0.75rem;
+  cursor: pointer;
+  border-radius: 50%;
+  background: white;
+}
+
+.dots {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

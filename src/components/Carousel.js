@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import Dots from "./Dots";
 
 import Slide from "./Slide";
 
@@ -52,6 +53,7 @@ function Carousel() {
           )}
         </div>
       ))}
+      <Dots slides={slides} current={current} />
     </section>
   );
 }
